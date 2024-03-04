@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+
+      <div class="calculator">
+        
+        <input type="text" placeholder ="0" id="input" >
+        
+        <button onclick="Clear()" class="botton">Cl</button>
+        
+        <button onclick="del()" class="botton">DEL</button>
+        
+        <button onclick="display('%')" class="botton">%</button>
+        
+        <button onclick="display('/')" class="botton">/</button>
+        
+        <button onclick="display('7')" class="botton">7</button>
+        
+        <button onclick="display('8')" class="botton">8</button>
+        
+        <button onclick="display('9')" class="botton">9</button>
+        
+        <button onclick="display('*')" class="botton">*</button>
+        
+        <button onclick="display('4')" class="botton">4</button>
+
+        <button onclick="display('5')" class="botton">5</button>
+
+        <button onclick="display('6')" class="botton">6</button>
+
+        <button onclick="display('-')" class="botton">-</button>
+        
+        <button onclick="display('1')" class="botton">1</button>
+        
+        <button onclick="display('2')" class="botton">2</button>
+        
+        <button onclick="display('3')" class="botton">3</button>
+        
+        <button onclick="display('+')" class="botton">+</button>
+        
+        <button onclick="display('.')" class="botton">.</button>
+        
+        <button onclick="display('0')" class="botton">0</button>
+        <button onclick="calculate()" class="equal">=</button>
+
+
+        
+      </div>
+        
+    </div>
+    <script>
+
+    let input= document.getElementById("input");
+
+    function display(num){
+      input.value+=num;
+    }
+    function calculate(){
+
+      input.value = eval(input.value)
+
+    }
+    function clear(){
+
+      input 
+
+    }
+    function del(){
+
+      input.value = input.value.slice(0,-1)
+ 
+    }
+    </script>
+
+    
+    
+</body>
+</html>
+        
+
+       
